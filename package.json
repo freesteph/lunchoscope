@@ -4,5 +4,8 @@
   "description": "everyone needs a lunch ally",
   "main": "src/index.js",
   "author": "Stéphane Maniaci <stephane.maniaci@asos.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
 }
