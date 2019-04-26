@@ -6,6 +6,6 @@ app.get("/", (req, res) => {
   res.send("Hello!");
 });
 
-app.listen(80, () => {
+app.listen(process.env.PORT, () => {
   console.log("server started");
 });
