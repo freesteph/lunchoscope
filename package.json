@@ -1,0 +1,8 @@
+{
+  "name": "lunchoscope",
+  "version": "1.0.0",
+  "description": "everyone needs a lunch ally",
+  "main": "src/index.js",
+  "author": "Stéphane Maniaci <stephane.maniaci@asos.com>",
+  "license": "MIT"
+}
