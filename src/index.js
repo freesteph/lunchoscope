@@ -1,3 +1,4 @@
+const mapper = require("./mapper");
 const cp = require("child_process");
 
 const IM_PARAMS = {
@@ -14,7 +15,7 @@ const IM_PARAMS = {
   monochrome: true
 };
 
-function lunchoscope() {
+function lunchoscope(path) {
   const params = Object.entries(IM_PARAMS)
     .map(
       ([param, value]) =>
@@ -23,10 +24,10 @@ function lunchoscope() {
     .filter(f => !!f)
     .join(" ");
 
-  cp.execSync(`convert current-menu.jpg ${params} output.tiff`);
-  const text = cp.execSync(`tesseract output.tiff stdout`);
+  cp.execSync(`convert ${path} ${params} ./tmp/output.tiff`);
+  const text = cp.execSync(`tesseract ./tmp/output.tiff stdout`);
 
-  return text.toString();
+  return mapper(text.toString());
 }
 
 module.exports = lunchoscope;
