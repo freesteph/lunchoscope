@@ -1,6 +1,7 @@
 {
   "name": "lunchoscope",
   "version": "1.0.0",
+  "registry": "https://registry.yarnpkg.com",
   "description": "everyone needs a lunch ally",
   "main": "src/index.js",
   "scripts": {
