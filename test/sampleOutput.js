@@ -1,61 +1,81 @@
 module.exports = `
-Weekly Menu
+Monday
 
-EASTER MONDAY
+Lime, lemongrass and basil scented Thai
 
-WC:23'9 April
-
-ENRON ENRON RON NER e RES eRe Ske oe te ne ne ek ee eee ee ee ee ee oe oon ne be on be ee ee be tn ee On ee eee CARS ER PER ERO O EER EDR R ER ERR EER BERS ROR ERE NORE EECA OR ERO EMER E bow M NOR eh ewe hae
+green chicken curry with coriander rice or
+noodles £3.70
 
 Tuesday
 
-Soup : Minestrone
+Hot smoked BBQ pork belly mac n’
+cheese served with chef salad £ 3.70
 
-Beef steak chilli served with coriander “Vegan chilli & bean tacos served with — oe %  Cheesenachos £ 1.50
-rice and sourcream £3.70 coriander rice and tomato salsa £3.60 = Crispy chilli courgettes £1.20
+Weekly Menu
 
-Wednesday _
+Lime, lemongrass and basil scented Thai
+green curry, chunky courgettes, bean
+sprouts & butter beans with coriander rice
 
-Chicken or lamb tagine s served with Grilled oregano halloumi, warm flat
-fruity cous cous and mint yogurt £ 3.70 bread, tabbouleh salad & garlic yoghurt
-£3. 00 |
+Roasted leek & mushroom mac n cheese
+with BBG onions & chef's salad £3.60
 
-HE A RE RE RO a ME ae EE SS OA Rm SEAS Ee Ee EE Ee Oe
+WC:29th April
 
-Thursday
+Soup: Mushroom & thyme
 
-Bulgogi beef burger, red cabbage | Dirty vegan bang bang cauliflower
-kim chi slaw £3.70 burger avocado cream, has sh brown &
-stiracha mayo ina beetroot bun £3.60
+Thai coconut slaw £0.95
+Veggie spring roll £1.50
 
+Soup : White bean, coconut & pepper
 
+Chicken Wings £ 1.50
+Garlic dough balls £1.20
 
+a a SS
 
+Wednesday
 
-Soup: Pea and mint
+Chicken Parmigiana with oregano &
+parmesan crumb, melted mozzarella &
+tomato mayo in a soft bun £ 3.70
 
-Greek salad with watermelon £1.10
-Zaatar spanakopita £1.50
+Kookoo Sabzi (Persian frittata) with
+coriander, dill, spinach and parsley & feta
+served with chef's salad & khobez £3.60
 
-BRE AE SL AER A ARE AE ARE RE AE IRL AE RR AE ARE ARE ARE RE AER A AAR OR
+Soup: Mediterranean spinach & lentil
 
-‘Soup: Leek and potato
+Mac & Cheese pot £1.10
+Garlic bread with cheese £1.50
 
-Chilli fries £1 10
-Crunchy mushrooms £1.50
+Coriander, cumin and smoked paprika
+beef, rice and black bean burritos with
+soured cream & salsa £3.70
 
-AGHAM ER ENERA EC RER ESET REAR ENOTES OREO ROS A TE CE TO A ER RE EAE EER OREO ATOR ENE SEER ER OR ORE EUR EE OE EEE EE EERE EN EERE EERE EERE TREE TERETE EEE EERE ERT REED Oe ee Re
+Coriander, cumin and smoked paprika
+soya, rice and black bean burritos with
+soured cream & salsa £3.60
+
+Soup: Creamy vegan cauliflower
+
+Chilli fries £1.10
+Corn on the cob £1.20
+Nachos & cheese £1.50
 
 Friday
+Battered or breaded sustainable fish of the
 
-Battered sustainable fish of the day served Stuffed peppers with spicy lentil and wild
-with fluffy chips, home made tartare sauce rice with vegan mozzarella and chef's
-& lemon wedge £3.80 salad £3.70.
+day served with chunky chips, homemade
+tartar sauce & lemon wedge £3.80
 
-Soup: Moroccan cauliflower
-Peas steam/ mushy £0.95
+Homemade polenta cake with roasted
+peppers & aubergines, goat cheese and
+served with chef's salad or chips £3.70
 
-Gherkin fcurry sauce £0.50
-Chips £1.10.
-
-`;
+Soup: Broccoli & red Lentil
+
+Peas steam/mushy £0.95
+Gherkin/curry sauce £0.50
+Chips £1.10
+`;
