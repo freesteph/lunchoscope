@@ -12,8 +12,8 @@ describe("mapper", () => {
     ]);
   });
 
-  it("has the correct value for Tuesday", () => {
-    const monday = mapper(data)["Tuesday"];
+  it("has the correct value for monday", () => {
+    const monday = mapper(data)["Monday"];
 
     expect(monday).toEqual(expect.stringContaining("Beef steak chilli"));
     expect(monday).toEqual(expect.stringContaining("Vegan chilli & bean"));

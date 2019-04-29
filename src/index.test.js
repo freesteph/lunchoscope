@@ -1,19 +1,33 @@
 const lunchoscope = require("./index");
+const reader = require("./reader");
+const mapper = require("./mapper");
+
+jest.mock("./reader");
+jest.mock("./mapper");
+
+const mockReadResult = Symbol("test-read-result");
+const mockMapperResult = Symbol("test-mapper-result");
+const mockPath = Symbol("test-path");
 
 describe("lunchoscope", () => {
-  it("should correctly read the entries", () => {
-    result = lunchoscope();
+  beforeEach(() => {
+    reader.mockReturnValue(mockReadResult);
+    mapper.mockReturnValue(mockMapperResult);
+  });
 
-    const entries = [
-      "Pea and mint",
-      "Greek salad with watermelon",
-      "Beef steak chilli served with coriander",
-      "Grilled oregano halloumi",
-      "with fluffy chips, home made tartare sauce"
-    ];
+  it("should call the reader with the right path", () => {
+    lunchoscope(mockPath);
 
-    entries.forEach(entry =>
-      expect(result).toEqual(expect.stringContaining(entry))
-    );
+    expect(reader).toHaveBeenCalledWith(mockPath);
+  });
+
+  it("should pipe the result to the mapper", () => {
+    lunchoscope(mockPath);
+
+    expect(mapper).toHaveBeenCalledWith(mockReadResult);
+  });
+
+  it("should return the mapper's result", () => {
+    expect(lunchoscope(mockPath)).toEqual(mockMapperResult);
   });
 });
