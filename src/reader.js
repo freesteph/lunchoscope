@@ -1,9 +1,15 @@
 const cp = require("child_process");
 
 const IM_PARAMS = {
-  resample: "300x300",
-  border: "10x10",
-  "brightness-contrast": "-20x80",
+  resample: 144,
+  fill: "black",
+  opaque: "None",
+  "auto-threshold": "OTSU",
+  "auto-gamma": true,
+  "auto-level": true,
+  border: "1%",
+  colorspace: "gray",
+  normalize: true,
   monochrome: true,
   alpha: "off"
 };
@@ -21,8 +27,8 @@ function formatIMParams(params) {
 function reader(path) {
   const params = formatIMParams(Object.entries(IM_PARAMS));
 
-  cp.execSync(`convert ${path} ${params} ./tmp/output.tiff`);
-  const text = cp.execSync(`tesseract ./tmp/output.tiff stdout`);
+  cp.execSync(`convert ${path} ${params} ./tmp/output.png`);
+  const text = cp.execSync(`tesseract ./tmp/output.png stdout`);
 
   return text.toString();
 }
