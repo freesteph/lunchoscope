@@ -1,17 +1,52 @@
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
-module.exports = function mapper(input) {
-  const inlined = input.split("\n").filter(v => !!v);
+const unspace = str => str.replace(/\s{2,}/g, " ");
 
-  return DAYS.reduce((menu, currentDay) => {
-    const day = DAYS.indexOf(currentDay);
-    const from = input.indexOf(currentDay) + currentDay.length;
-    const to = currentDay !== "Friday" && input.indexOf(DAYS[day + 1]);
+const removeJunk = str => {
+  const tokens = [
+    new RegExp(DAYS.concat("Weekly menu").join("|"), "ig"), // days
+    new RegExp("[\\w]{15,}", "ig"), // longass words
+    new RegExp("\\s[A-Z]{2}\\s"), // double capitals
+    new RegExp("WC:[\\d\\w]{4}\\s\\w+") // WC preambule
+  ];
 
-    const data = input.slice(from, to === false ? undefined : to);
+  return tokens.reduce((sane, reg) => sane.replace(reg, ""), str);
+};
 
-    return Object.assign({}, menu, {
-      [currentDay]: data
-    });
+function parseDayInput(day, input) {
+  const index = DAYS.indexOf(day);
+  const entryRegexp = /(.+?)(£\s?\d\.\d{2})/g;
+
+  const sane = input.split("\n").join("");
+  const all = unspace(sane).split("LUNCHOSCOPE_DELIM");
+
+  const res = ["meat", "veg", "sides"].reduce((menu, diet, i) => {
+    const entry = [...all[i].matchAll(entryRegexp)];
+
+    if (!entry.length) return {};
+
+    const dayEntry = entry && entry[index * 2];
+
+    if (!dayEntry) return menu;
+
+    return {
+      ...menu,
+      [diet]: {
+        description: removeJunk(dayEntry[1]),
+        price: dayEntry[2]
+      }
+    };
   }, {});
+
+  return res;
+}
+
+module.exports = function mapper(input) {
+  return DAYS.reduce(
+    (menu, currentDay) => ({
+      ...menu,
+      [currentDay]: parseDayInput(currentDay, input)
+    }),
+    {}
+  );
 };

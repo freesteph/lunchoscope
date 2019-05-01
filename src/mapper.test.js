@@ -12,13 +12,19 @@ describe("mapper", () => {
     ]);
   });
 
-  it("has the correct value for monday", () => {
+  it.skip("has the correct value for monday", () => {
     const monday = mapper(data)["Monday"];
 
-    expect(monday).toEqual(expect.stringContaining("Beef steak chilli"));
-    expect(monday).toEqual(expect.stringContaining("Vegan chilli & bean"));
-    expect(monday).toEqual(expect.stringContaining("Crispy chilli courgettes"));
+    expect(monday.veg.description).toEqual(
+      expect.stringContaining(
+        "Lime, lemongrass and basil scented Thai green curry, chunky courgettes, bean sprouts and & butter beans with coriander rice"
+      )
+    );
+  });
 
-    expect(monday).not.toEqual("Dirty vegan");
+  it("has the correct price value for monday", () => {
+    const monday = mapper(data)["Monday"];
+
+    expect(monday.veg.price).toEqual("£3.60");
   });
 });

@@ -1,8 +1,6 @@
 const cp = require("child_process");
 
 const IM_PARAMS = {
-  resample: 200,
-  filter: "triangle",
   resize: "x1000",
   fill: "black",
   opaque: "None",
@@ -37,11 +35,10 @@ function reader(path) {
   const params = formatIMParams(Object.entries(IM_PARAMS));
 
   cp.execSync(`convert ${path} ${params} ./tmp/output.png`);
-  const text = [0, 1, 2]
-    .map(n => cp.execSync(`tesseract ./tmp/output-${n}.png stdout`))
-    .join("");
 
-  return text.toString();
+  return [0, 1, 2]
+    .map(n => cp.execSync(`tesseract ./tmp/output-${n}.png stdout`))
+    .join("LUNCHOSCOPE_DELIM");
 }
 
 module.exports = reader;

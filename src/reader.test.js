@@ -4,9 +4,7 @@ describe("reader", () => {
   let result;
 
   beforeAll(() => {
-    result = reader("test/sampleMenu.jpg")
-      .split("\n")
-      .join("");
+    result = reader("test/sampleMenu.jpg");
   });
 
   describe("tokens", () => {
