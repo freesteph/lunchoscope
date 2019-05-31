@@ -1,4 +1,4 @@
-const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+const DAYS = require("./data/days");
 
 const unspace = str => str.replace(/\s{2,}/g, " ");
 
