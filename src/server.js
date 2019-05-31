@@ -3,9 +3,20 @@ const fs = require("fs");
 const app = express();
 
 app.post("/", (req, res) => {
-  const data = JSON.parse(fs.readFileSync("./tmp/menu"));
+  const data = JSON.parse(fs.readFileSync("./tmp/menu"))["Tuesday"];
+
+  const all = [
+    ["meat", ":poultry_leg:"],
+    ["veg", ":green_salad:"],
+    ["sides", ":fries:"]
+  ].map(([diet, emoji]) => {
+    const entry = data[diet];
+
+    return entry ? `${emoji} ${entry.description} - *${entry.price}*`: '';
+  });
+
   res.json({
-    text: data["Tuesday"]
+    text: "Today's menu is: \n"+ all.join("\n"),
   });
 });
 
