@@ -21,11 +21,16 @@ function parseDayInput(day, input) {
   const all = unspace(sane).split("LUNCHOSCOPE_DELIM");
 
   const res = ["meat", "veg", "sides"].reduce((menu, diet, i) => {
-    const entry = [...all[i].matchAll(entryRegexp)];
+    const entries = [];
 
-    if (!entry.length) return {};
+    let match;
+    while ((match = entryRegexp.exec(all[i]))) {
+      entries.push(match);
+    }
 
-    const dayEntry = entry && entry[index * 2];
+    if (!entries.length) return {};
+
+    const dayEntry = entries[index * 2];
 
     if (!dayEntry) return menu;
 

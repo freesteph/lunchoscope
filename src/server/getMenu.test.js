@@ -6,11 +6,11 @@ jest.mock("./getDay");
 jest.mock("./formatMenu");
 
 const mockRes = {
-  text: jest.fn()
+  send: jest.fn()
 };
 
 describe("getMenu", () => {
-  const get = day => getMenu({ params: { day } }, mockRes);
+  const get = day => getMenu({ body: { day } }, mockRes);
 
   beforeEach(() => {
     getDay.mockReturnValue("menu");
@@ -35,6 +35,6 @@ describe("getMenu", () => {
     get("monday");
 
     expect(formatMenu).toHaveBeenCalledWith("menu");
-    expect(mockRes.text).toHaveBeenCalledWith("formatted menu");
+    expect(mockRes.send).toHaveBeenCalledWith("formatted menu");
   });
 });

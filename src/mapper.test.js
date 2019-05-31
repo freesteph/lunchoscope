@@ -4,16 +4,16 @@ const mapper = require("./mapper");
 describe("mapper", () => {
   it("returns an object keyed by days", () => {
     expect(Object.keys(mapper(data))).toEqual([
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
     ]);
   });
 
   it.skip("has the correct value for monday", () => {
-    const monday = mapper(data)["Monday"];
+    const monday = mapper(data)["monday"];
 
     expect(monday.veg.description).toEqual(
       expect.stringContaining(
@@ -23,7 +23,7 @@ describe("mapper", () => {
   });
 
   it("has the correct price value for monday", () => {
-    const monday = mapper(data)["Monday"];
+    const monday = mapper(data)["monday"];
 
     expect(monday.veg.price).toEqual("£3.60");
   });

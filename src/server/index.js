@@ -3,6 +3,8 @@ const app = express();
 
 const getMenu = require("./getMenu");
 
+app.use(express.json());
+
 app.post("/", getMenu);
 
 app.get("/hk", (req, res) => {

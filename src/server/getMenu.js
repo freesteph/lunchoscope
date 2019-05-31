@@ -3,13 +3,13 @@ const getDay = require("./getDay");
 const formatMenu = require("./formatMenu");
 
 function getMenu(req, res) {
-  const { day } = req.params;
+  const day = req.body.day.toLowerCase();
 
-  if (!days.map(d => d.toLowerCase()).includes(day.toLowerCase())) {
+  if (!days.includes(day)) {
     throw new Error("not a day I'm aware of.");
   }
 
-  res.text(formatMenu(getDay(day)));
+  res.send(formatMenu(getDay(day)));
 }
 
 module.exports = getMenu;
