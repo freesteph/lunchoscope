@@ -1,5 +1,6 @@
 const days = require("../data/days");
 const getDay = require("./getDay");
+const formatMenu = require("./formatMenu");
 
 function getMenu(req, res) {
   const { day } = req.params;
@@ -8,7 +9,7 @@ function getMenu(req, res) {
     throw new Error("not a day I'm aware of.");
   }
 
-  res.text(getDay(day));
+  res.text(formatMenu(getDay(day)));
 }
 
 module.exports = getMenu;

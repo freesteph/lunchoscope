@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatMenu should format the menu entry properly 1`] = `
+"Today's menu is:
+:poultry_leg: chicken - *3*
+:green_salad: spinash - *2*
+:fries: fries & gravy - *1*"
+`;

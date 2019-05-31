@@ -1,7 +1,9 @@
 const getMenu = require("./getMenu");
 const getDay = require("./getDay");
+const formatMenu = require("./formatMenu");
 
 jest.mock("./getDay");
+jest.mock("./formatMenu");
 
 const mockRes = {
   text: jest.fn()
@@ -12,6 +14,7 @@ describe("getMenu", () => {
 
   beforeEach(() => {
     getDay.mockReturnValue("menu");
+    formatMenu.mockReturnValue("formatted menu");
   });
 
   afterEach(() => {
@@ -22,10 +25,16 @@ describe("getMenu", () => {
     expect(() => get("yolo")).toThrow(/not a day/);
   });
 
-  it("should return the correct day's menu", () => {
+  it("should grab the correct day's menu", () => {
     get("monday");
 
     expect(getDay).toHaveBeenCalledWith("monday");
-    expect(mockRes.text).toHaveBeenCalledWith("menu");
+  });
+
+  it("should return the resulting day's menu through the formatter", () => {
+    get("monday");
+
+    expect(formatMenu).toHaveBeenCalledWith("menu");
+    expect(mockRes.text).toHaveBeenCalledWith("formatted menu");
   });
 });
