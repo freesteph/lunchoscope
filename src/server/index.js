@@ -12,11 +12,11 @@ app.post("/", (req, res) => {
   ].map(([diet, emoji]) => {
     const entry = data[diet];
 
-    return entry ? `${emoji} ${entry.description} - *${entry.price}*`: '';
+    return entry ? `${emoji} ${entry.description} - *${entry.price}*` : "";
   });
 
   res.json({
-    text: "Today's menu is: \n"+ all.join("\n"),
+    text: "Today's menu is: \n" + all.join("\n")
   });
 });
 

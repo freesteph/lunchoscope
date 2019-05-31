@@ -5,7 +5,7 @@
   "description": "everyone needs a lunch ally",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/server.js",
+    "start": "node ./src/server",
     "refresh": "node ./src/refresh.js",
     "test": "jest"
   },
