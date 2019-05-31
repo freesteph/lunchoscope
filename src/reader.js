@@ -3,15 +3,15 @@ const cp = require("child_process");
 const IM_PARAMS = {
   resize: "x1000",
   fill: "black",
+  level: "-15%,100%,0.2",
   opaque: "None",
-  crop: "3x0@",
-  border: "3%",
   "+repage": true,
+  crop: "3x1+5@",
   "+adjoin": true,
   "auto-threshold": "OTSU",
   "auto-gamma": true,
   "auto-level": true,
-  colorspace: "gray",
+  colorspace: "Gray",
   normalize: true,
   monochrome: true,
   alpha: "off"

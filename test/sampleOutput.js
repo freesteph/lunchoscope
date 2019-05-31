@@ -1,83 +1,64 @@
 module.exports = `
 Monday
+BANK HOLIDAY
 
-    Lime, lemongrass and basil scented Thai
-    green chicken curry with coriander rice or
-    agodles £3.70
+Tuesday
 
-    Tuesday
-    Hot smoked BBQ pork belly mac n°
-    cheese served with chef salad £ 3.70
+Gritish beef and black turtle bean chilli with
+steamed paprika rice and sour cream €3.7¢
 
-    Wednesday
+Wednesday
 
-    Chicken Parmigiana with oregano &
-    parmesan crumb, melted mozzarella &
-    tomato mayo in a softbun £ 3.70
+Chicken. leek and mushroom mac n
+cheese served with chef's salad €3.70
 
-    Thursday
+Thursday
 
-    Coriander, cumin and smoked paprika
-    beef, rice and black bean burritos with
-    soured cream & salsa £3.70
+Grilled Greek style beef burger with
+beef tomato. red onion. crispy lettuce
+and whipped feta yoghurt £3.70
 
-    - °
+.
+Friday
 
-    Friday
+Battered or breaded fish served with
+chunky chips homemade tartare sauce
+& lemon wedge £3.70
+LUNCHOSCOPE_DELIMWeekly Menu
 
-    Battered or breaded sustainable fish of the
-    day served with chunky chips, homemade
-    tartar sauce & lemon wedge £3.80
+Spinach , pea and goat cheese risotto we
+served with rocket salad £3.70
+Portobello mushroom. leek and cherry Qo
 
-    LUNCHOSCOPE_DELIMWeekly Menu
+tomato mac n cheese served with chef's
+salad £3.60
 
-    Lime, lemongrass and basil scented Thai
+Beetroot and carrot burger with beef ne
+tomate . crispy lettuce. hash brown and Se
+dill and garlic sauce £3.60
 
-    green curry, chunky courgettes, bean SS
-    sprouts & butter beans with coriander rice
+Spicy mix beans and soy protein tacos wide,
+served with coriander and tomato salsa Qe
+and tomatillo rice £3.70
+LUNCHOSCOPE_DELIMWC:27" of May
 
-    beer £3.60 ee erereerereeterererernenersceereeres
-    Roasted leek & mushroom mac n cheese wing,
-    with BBQ onions & chef's salad £3.60 Qe
+Soup: Mushroom & thyme
 
-    Kookoo Sabzi (Persian frittata) with
-    coriander, dill, spinach and parsley & feta v##0#
-    served with chef's salad & khobez £3.60
+Cheddar nachos £1.10
+Pesto dough bails £1.50
 
-    Coriander, cumin and smoked paprika &
-    soya, rice and black bean burritos with
-    soured cream & salsa £3.60
+Soup: Spinach and lentil
+Spicy wings £1.50
+Garlic bread £1.50
 
-    Homemade polenta cake with roasted &
-    peppers & aubergines, goat cheese and
-    served with chef's salad or chips £3.70
 
-    LUNCHOSCOPE_DELIMWC:29th April
 
-    Soup: Mushroom & thyme
+Soup: Carrot and coriander
+Paprika fries £ 1.50
+Vine leaves £1.50
 
-    Thai coconut slaw £0.95
-    Veggie spring roll £1.50
-
-    Soup : White bean, coconut & pepper
-
-    Chicken Wings £ 1.50
-    Garlic dough balls £1.20
-
-    Soup: Mediterranean spinach & lentil
-
-    Mac & Cheese pot £1.10
-    Garlic bread with cheese £1.50
-
-    Soup: Creamy vegan cauliflower
-
-    Chilli fries £1.10
-    Corn on the cob £1.20
-    Nachos & cheese £1.50
-
-    Soup: Broccoli & red Lentil
-    Peas steam/mushy £0.95
-
-    Gherkin/ curry sauce £0.50
-    Chips £1.10
+Soup : Orzo minestrone
+Peas steam /mushy £0.95
+Gherkin/curry sauce £0.50
+Chips £1.10
 `;
