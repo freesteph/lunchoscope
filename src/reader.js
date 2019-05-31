@@ -1,4 +1,7 @@
 const cp = require("child_process");
+const fs = require("fs");
+
+const DEBUG = false;
 
 const IM_PARAMS = {
   resize: "x1000",
@@ -36,9 +39,13 @@ function reader(path) {
 
   cp.execSync(`convert ${path} ${params} ./tmp/output.png`);
 
-  return [0, 1, 2]
+  const text = [0, 1, 2]
     .map(n => cp.execSync(`tesseract ./tmp/output-${n}.png stdout`))
     .join("LUNCHOSCOPE_DELIM");
+
+  if (DEBUG) fs.writeFileSync("./tmp/debug-text.txt", text);
+
+  return text;
 }
 
 module.exports = reader;

@@ -1,5 +1,7 @@
-module.exports = `
-Monday
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reader should parse the menu correctly 1`] = `
+"Monday
 BANK HOLIDAY
 
 Tuesday
@@ -39,7 +41,7 @@ dill and garlic sauce £3.60
 Spicy mix beans and soy protein tacos wit,
 served with coriander and tomato salsa Ge
 and tomatillo rice £3.70
-LUNCHOSCOPE_DELIMWC:27" of May
+LUNCHOSCOPE_DELIMWC:27\\" of May
 
 Soup: Mushroom & thyme
 
@@ -60,4 +62,5 @@ Soup : Orzo minestrone
 Peas steam/mushy £0.95
 Gherkin/curry sauce £0.50
 Chips £1.10
+"
 `;

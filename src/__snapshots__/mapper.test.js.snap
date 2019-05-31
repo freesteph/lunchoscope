@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapper correctly maps all days 1`] = `
+Object {
+  "friday": Object {
+    "meat": Object {
+      "description": "e  Battered or breaded fish served with chunky chips, homemade tartare sauce & lemon wedge",
+      "price": "£3.70",
+    },
+    "veg": Object {
+      "description": "Spicy mix beans and soy protein tacos wit, served with coriander and tomato salsa Ge and tomatillo rice",
+      "price": "£3.70",
+    },
+  },
+  "monday": "N/A",
+  "thursday": Object {
+    "meat": Object {
+      "description": "Grilled Greek style beef burger with beef tomato, red onion, crispy lettuce and whipped feta yoghurt",
+      "price": "£3.70",
+    },
+    "veg": Object {
+      "description": "Beetroot and carrot burger with beef ee tomato , crispy lettuce, hash brown and Ge dill and garlic sauce",
+      "price": "£3.60",
+    },
+  },
+  "tuesday": Object {
+    "meat": Object {
+      "description": "British beef and black turtle bean chilli with steamed paprika rice and sour cream",
+      "price": "£3.70",
+    },
+    "veg": Object {
+      "description": "Spinach , pea and goat cheese risotto wa ) served with rocket salad",
+      "price": "£3.70",
+    },
+  },
+  "wednesday": Object {
+    "meat": Object {
+      "description": "Chicken, leek and mushroom mac n’ cheese served with chef's salad",
+      "price": "£3.70",
+    },
+    "veg": Object {
+      "description": "Portobello mushroom, leek and cherry Go ven tomato mac n cheese served with chef's salad",
+      "price": "£3.60",
+    },
+  },
+}
+`;
