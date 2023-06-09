@@ -1,7 +1,7 @@
 const cp = require("child_process");
 const fs = require("fs");
 
-const DEBUG = false;
+const DEBUG = true;
 
 const IM_PARAMS = {
   resize: "x1000",
@@ -11,7 +11,7 @@ const IM_PARAMS = {
   "+repage": true,
   crop: "3x1+5@",
   "+adjoin": true,
-  "auto-threshold": "OTSU",
+  // "auto-threshold": "OTSU",
   "auto-gamma": true,
   "auto-level": true,
   colorspace: "Gray",

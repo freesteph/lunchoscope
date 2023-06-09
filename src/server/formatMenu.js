@@ -2,7 +2,7 @@ function formatMenu(data) {
   const all = [
     ["meat", ":poultry_leg:"],
     ["veg", ":green_salad:"],
-    ["sides", ":fries:"]
+    // ["sides", ":fries:"]
   ].map(([diet, emoji]) => {
     const entry = data[diet];
 
